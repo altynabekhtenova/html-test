@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Калькулятор калорий</title>
+</head>
+<body>
+<h3>Калькулятор калорий</h3>
+<form action="mailto:altusha.pin-up@mail.ru" method="post">
+    <div>Пол:
+        <select>
+            <option>Мужской</option>
+            <option>Женский</option>
+        </select>
+    </div>
+    <br>
+    <div><label for="weight">Вес, кг:</label>
+        <input type="text" id="weight" name="weight"/></div>
+    <br>
+    <div><label for="height">Рост, см:</label>
+        <input type="text" id="height" name="height"/></div>
+    <br>
+    <div>Количество шагов в день:<br>
+        <input type="radio" id="3" name="steps" value="1"><label for="3">0-2500</label><br>
+        <input type="radio" id="4" name="steps" value="2"><label for="4">2500-5000</label><br>
+        <input checked="checked" id="5" type="radio" name="steps" value="3"><label for="5">5000-7500</label><br>
+        <input type="radio" id="6" name="steps" value="4"><label for="6">7500-1000</label><br>
+        <input type="radio" id="7" name="steps" value="5"><label for="7">10000-15000</label><br>
+        <input type="radio" id="8" name="steps" value="6"><label for="8">более 15000</label><br>
+    </div>
+    <br>
+    <div>Физическая нагрузка:<br>
+        <input type="checkbox" id="9"/><label for="9">Отсутствует</label><br>
+        <input type="checkbox" id="10"/><label for="10">Пешие прогулки</label><br>
+        <input type="checkbox" id="11"/><label for="11">Кардио тренировки</label><br>
+        <input type="checkbox" id="12"/><label for="12">Силовые тренировки</label><br>
+        <label for="13">Другое</label>
+        <input type="textarea" id="13" name="training"/><br>
+    </div>
+    <br>
+    <div>Цель:
+        <select size="3" multiple name="goal">
+            <option disabled>Выберите цель</option>
+            <option value="Похудение">Похудение</option>
+            <option selected value="Сохранение веса/поддержание формы">Сохранение веса/поддержание формы</option>
+            <option value="Набор веса/мышечной массы">Набор веса/мышечной массы</option>
+        </select>
+    </div>
+    <br>
+    <div><label for="14">Оставьте почтовый адрес для получения результата:</label>
+        <input type="textarea" id="14" name="mail"/></div>
+    <br>
+    <button type="submit"><a
+            href="http://localhost:63342/html-test/final.html?_ijt=mv46a6hattrh0dhvpk05ont14p&_ij_reload=RELOAD_ON_SAVE">Получить
+        результат</a></button>
+</form>
+</body>
