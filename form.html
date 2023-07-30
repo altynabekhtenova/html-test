@@ -10,8 +10,8 @@
 <form action="mailto:altusha.pin-up@mail.ru" method="post">
     <div>Пол:
         <select>
-            <option>Мужской</option>
-            <option>Женский</option>
+            <option name="male">Мужской</option>
+            <option name="female">Женский</option>
         </select>
     </div>
     <br>
@@ -31,10 +31,10 @@
     </div>
     <br>
     <div>Физическая нагрузка:<br>
-        <input type="checkbox" id="9"/><label for="9">Отсутствует</label><br>
-        <input type="checkbox" id="10"/><label for="10">Пешие прогулки</label><br>
-        <input type="checkbox" id="11"/><label for="11">Кардио тренировки</label><br>
-        <input type="checkbox" id="12"/><label for="12">Силовые тренировки</label><br>
+        <input type="checkbox" name="none" id="9"/><label for="9">Отсутствует</label><br>
+        <input type="checkbox" name="walking" id="10"/><label for="10">Пешие прогулки</label><br>
+        <input type="checkbox" name="cardio" id="11"/><label for="11">Кардио тренировки</label><br>
+        <input type="checkbox" name="strength" id="12"/><label for="12">Силовые тренировки</label><br>
         <label for="13">Другое</label>
         <input type="textarea" id="13" name="training"/><br>
     </div>
@@ -52,7 +52,7 @@
         <input type="textarea" id="14" name="mail"/></div>
     <br>
     <button type="submit"><a
-            href="http://localhost:63342/html-test/final.html?_ijt=mv46a6hattrh0dhvpk05ont14p&_ij_reload=RELOAD_ON_SAVE">
+            href="final.html">
         Получить результат</a></button>
 </form>
 </body>
